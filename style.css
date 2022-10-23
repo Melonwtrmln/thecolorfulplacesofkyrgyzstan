@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+  margin: 0;
+  height: auto;
+}
+body {
+  background-color: lightblue;
+}
+header {
+  display: grid;
+  grid-template-columns: 10% 50%;
+  justify-content: space-between;
+  background-color: lightblue;
+  border: 1px solid black;
+}
+.header_logo {
+  border: 0.5px solid black;
+  border-radius: 50%;
+  width: 50px;
+  background-color: #1e5162;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin: 15px;
+}
+.links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.head_link {
+  border: 0.5px solid black;
+  border-radius: 1px;
+  background-color: #1e5162;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin: 15px;
+}
+.mainimage {
+  outline: 0.5px solid black;
+  background-image: url(https://wallpapershome.ru/images/wallpapers/ozero-issik-kul-3840x2160-4k-hd-8k-kirgizstan-otdih-otdih-618.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-size: 80px;
+}
+.text {
+  color: black;
+  text-align: center;
+  padding-top: 15%;
+  font-size: 100px;
+}
+.main {
+  display: grid;
+  grid-template-rows: 580px auto;
+}
+.content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3em;
+  margin: 10%;
+}
+.cont_box {
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  padding: 15px;
+  position: relative;
+}
+.number {
+  background-color: #d4b1a4;
+  border-radius: 50px;
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  right: -4%;
+  top: -5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  border-radius: 50%;
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  left: -3%;
+  top: -3%;
+  background-size: cover;
+}
+p {
+  padding: 5px;
+}
+.header {
+  display: none;
+}
+.kolsuu {
+  background-image: url(https://www.karakolguide.com/kolsuu_photo/kolsuu_beatiful_mountain_lake.jpg);
+}
+.skazka {
+  background-image: url(https://img.itinari.com/pages/images/original/ead534b7-8015-4bef-a61c-4b9d1becb242-istock-1059719798.jpg?ch=DPR&dpr=2.625&w=1600&s=878131a02f67c22c62fd4b18e59c4c46);
+}
+.ik {
+  background-image: url(https://cf.bstatic.com/xdata/images/hotel/max1024x768/306630214.jpg?k=6f8315636342d33cd6f28726e87a7d9a7f9d1b88df93706eac214b1986d7628d&o=&hp=1);
+}
+.bob {
+  background-image: url(https://www.advantour.com/img/kyrgyzstan/images/arslanbob.jpg);
+}
+.archa {
+  background-image: url(https://images.squarespace-cdn.com/content/v1/57483e0df699bbec3bf5f6ef/1577026582572-03JFAQO7XA6YZLZS9W01/Trekking-In-Ala-Archa-National-Park-Ak-Sai-Waterfall.jpg);
+}
+.chelek {
+  background-image: url(https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcR0eYCGnaUmn54kA4t1afr9pEDK5OTKFOWxZ8JE-Xr4qewJE6Lj8tK1TOnOWC1aoYBhgwvbEHHidWujid7bf14VCw);
+}
+
+footer {
+  background-color: #1e5162;
+  text-align: center;
+  color: white;
+  padding: 25px;
+}
+@media screen and (max-width: 510px) {
+  header {
+    display: none;
+  }
+  .header {
+    display: grid;
+    background-color: lightblue;
+    grid-template-columns: 10% 10%;
+    justify-content: space-between;
+  }
+  img {
+    width: 40px;
+    height: 30px;
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+  .content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (min-width: 510px) and (max-width: 765px) {
+  header {
+    display: grid;
+    grid-template-columns: 10% 70%;
+  }
+  .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  image {
+    border-radius: 30%;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 3%;
+    bottom: 75%;
+  }
+}
